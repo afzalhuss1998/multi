@@ -4,41 +4,64 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cricket Insights Hub</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18111785082"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18111785082');
+  </script>
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background: linear-gradient(135deg, #07111f 0%, #0f2742 50%, #132f54 100%);
       color: #ffffff;
     }
+
     .container {
       max-width: 1120px;
       margin: 0 auto;
       padding: 24px;
     }
+
     .hero {
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
     }
+
     .card {
       width: 100%;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
       border-radius: 24px;
       padding: 40px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
     }
+
     h1 {
       font-size: 42px;
       margin-bottom: 16px;
+      line-height: 1.2;
     }
+
     p {
       color: #d7e5f7;
       font-size: 18px;
       line-height: 1.6;
+      max-width: 700px;
     }
+
     .btn {
       display: inline-block;
       margin-top: 20px;
@@ -48,12 +71,41 @@
       text-decoration: none;
       border-radius: 10px;
       font-weight: bold;
+      transition: 0.3s ease;
     }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.95;
+    }
+
     .features {
       margin-top: 30px;
     }
+
     .features div {
       margin-bottom: 10px;
+      font-size: 17px;
+      color: #eaf4ff;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        padding: 28px 20px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .btn {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -62,12 +114,18 @@
     <div class="container">
       <div class="card">
         <h1>Join Cricket Insights Community</h1>
+
         <p>
-          Stay updated with live cricket matches, simple insights, and a smooth community experience. 
+          Stay updated with live cricket matches, simple insights, and a smooth community experience.
           Get quick updates and connect easily through WhatsApp.
         </p>
 
-        <a class="btn" href="https://wa.me/447599229373?text=Hi%2C%20I%20want%20to%20join" target="_blank">
+        <a
+          class="btn"
+          href="https://wa.me/447599229373?text=Hi%2C%20I%20want%20to%20join"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Join on WhatsApp
         </a>
 
@@ -76,7 +134,6 @@
           <div>✔ Easy Join Process</div>
           <div>✔ Quick Support</div>
         </div>
-
       </div>
     </div>
   </section>
